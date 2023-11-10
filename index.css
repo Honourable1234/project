@@ -56,7 +56,7 @@
     padding-left: 2%;
 }
 #head div form button{
-    width: 150px;
+    width: 180px;
     height: 8vh;
     border-radius: 2px;
     margin-top: -1vh;
@@ -176,23 +176,30 @@
     font-size: 60px;
     padding-top: 5vh;
 }
+#accordionExample div h2 button::after{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+}
+#accordionExample div h2 button:not(.collapsed)::after{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg>');
+}
 #accordionExample div{
-    background-color: black;
+    background-color: grey;
     width: 80%;
     margin: auto;
     text-align: left;
 }
 #accordionExample div h2 button{
-    background-color: black;
+    background-color: grey;
     color: white;
 }
 .accord1{
     font-size: 20px;
     text-align: left;
+    background-color: grey;
 }
 #sect5 div:nth-child(3) p{
     font-size: 25px;
-    text-align: left;
+    text-align: center;
     color: white;
     margin-top: 5vh;
 }
@@ -213,10 +220,46 @@
     padding-left: 2%;
 }
 #sect5 div:nth-child(3) form button{
-    width: 150px;
+    width: 180px;
     height: 8vh;
     border-radius: 2px;
     margin-top: -1vh;
+}
+/* styling for footer */
+footer{
+    padding-top: 7vh;
+}
+footer a{
+    text-decoration-color: grey;
+    color: grey;
+    margin-left: 14%;
+}
+footer div a{
+    text-decoration-color: grey;
+}
+footer div a ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12%;
+    margin-top: 3vh;
+}
+footer div a ul li{
+    color: grey;
+    width: 22%;
+    height: 5vh;
+}
+#buttonend{
+    width: 150px;
+    border: thin solid white;
+    border-radius: none;
+    margin-left: 14%;
+    background-color: black;
+    margin-bottom: 2vh;
+}
+footer p{
+    color: grey;
+    margin-left: 14%;
 }
 /* media query */
 @media(max-width: 1000px){
@@ -301,6 +344,9 @@
     #sect4 div:nth-child(2) p{
         font-size: 20px;
     }
+    footer div a ul li{
+        width: 40%;
+    }
 }
 @media(max-width: 800px){
     #head{
@@ -346,6 +392,9 @@
     #sect5 div:nth-child(3) form button{
         margin: 2vh auto;
     }
+    #sect5{
+        min-height: 120vh;
+    }
 }
 @media(max-width: 600px){
     #head div form{
@@ -372,4 +421,11 @@
     #sect5 div:nth-child(3) form input{
         width: 80%;
     }
+}
+@media(max-width: 500px){
+    #head{
+        height: 130vh;
+    }
+    #head div div:nth-child(1) img{
+        width: 150px;
 }
