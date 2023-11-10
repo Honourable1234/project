@@ -168,13 +168,55 @@
     background-color: rgba(0, 0, 0, 0.804);
 }
 #sect5{
-    height: 100vh;
+    min-height: 100vh;
 }
-#sect5 div{
+#sect5 div:nth-child(1){
     color: white;
     text-align: center;
     font-size: 60px;
     padding-top: 5vh;
+}
+#accordionExample div{
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+#accordionExample div h2 button{
+    background-color: black;
+    color: white;
+}
+.accord1{
+    font-size: 20px;
+    text-align: left;
+}
+#sect5 div:nth-child(3) p{
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    margin-top: 5vh;
+}
+#sect5 div:nth-child(3) form{
+    height: 7vh;
+    width: 700px;
+    margin: auto;
+    background: none;
+    margin: auto;
+}
+#sect5 div:nth-child(3) form input{
+    height: 7vh;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.707);
+    border: thin solid grey;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 2%;
+}
+#sect5 div:nth-child(3) form button{
+    width: 150px;
+    height: 8vh;
+    border-radius: 2px;
+    margin-top: -1vh;
 }
 /* media query */
 @media(max-width: 1000px){
@@ -293,8 +335,22 @@
     #sect4 div:nth-child(2) p{
         font-size: 17px;
     }
+    #sect5 div:nth-child(3) form{
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #sect5 div:nth-child(3) form input{
+        margin: auto;
+    }
+    #sect5 div:nth-child(3) form button{
+        margin: 2vh auto;
+    }
 }
 @media(max-width: 600px){
+    #head div form{
+        width: 70%;
+    }
     #head div form input{
         width: 80%;
     }
@@ -309,5 +365,11 @@
     }
     #sect4 div:nth-child(2) p{
         font-size: 17px;
+    }
+    #sect5 div:nth-child(3) form{
+        width: 70%;
+    }
+    #sect5 div:nth-child(3) form input{
+        width: 80%;
     }
 }
