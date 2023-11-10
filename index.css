@@ -4,13 +4,189 @@
     box-sizing: border-box;
     background-color: black;
 }
+/* styling for head */
 #head{
     background-image: url('./images/netflix.jpeg');
-    height: 90vh;
+    height: 95vh;
     background-size: cover;
-    position: absolute;
 }
-#head nav{
-    background-color: none;
-    height: 90vh;
+#head div{
+    background: none;
+}
+#head div div:nth-child(1) img{
+    background: none;
+    width: 250px;
+}
+#head div div:nth-child(1) button{
+    float: right;
+    margin-top: 5vh;
+}
+#head div div:nth-child(2) h1{
+    background: none;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 10vh;
+}
+#head div div:nth-child(2) p:nth-child(1){
+    background: none;
+    color: white;
+    font-size: 25px;
+    margin-top: -3vh;
+}
+#head div div:nth-child(2) p:nth-child(2){
+    background: none;
+    color: white;
+    font-size: 25px;
+}
+#head div form{
+    height: 7vh;
+    width: 700px;
+    margin: auto;
+    background: none;
+    margin: auto;
+}
+#head div form input{
+    height: 7vh;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.707);
+    border: thin solid grey;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 2%;
+}
+#head div form button{
+    width: 150px;
+    height: 8vh;
+    border-radius: 2px;
+    margin-top: -1vh;
+}
+/* styling for section 1 */
+#hr1{
+    width: 100%;
+    height: 1vh;
+    background-color: rgba(0, 0, 0, 0.804);
+}
+#sect1{
+    display: flex;
+    height: 75vh;
+}
+#sect1 div:nth-child(1){
+    color: white;
+    width: 40%;
+    margin-top: 25vh;
+    margin-left: 10%;
+}
+#sect1 div:nth-child(1) h1{
+    font-size: 50px;
+}
+#sect1 div:nth-child(1) p{
+    font-size: 20px;
+}
+#sect1 div:nth-child(2) img{
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 10vh;
+}
+/* styling for section 2 */
+#hr2{
+    width: 100%;
+    height: 1vh;
+    background-color: rgba(0, 0, 0, 0.804);
+}
+#sect2{
+    color: white;
+    display: flex;
+}
+#sect2 div:nth-child(1) img{
+    width: 80%;
+    margin-top: 10vh;
+    margin-left: 20%;
+}
+#sect2 div:nth-child(2){
+    margin-top: 25vh;
+    width: 40%;
+}
+#sect2 div:nth-child(2) h1{
+    font-size: 50px;
+}
+#sect2 div:nth-child(2) p{
+    font-size: 25px;
+}
+/* media query */
+@media(max-width: 1000px){
+    #head{
+        height: 105vh;
+    }
+    #head div div:nth-child(2) h1{
+        font-size: 40px;
+    }
+    #head div div:nth-child(2) p:nth-child(1){
+        font-size: 20px;
+    }
+    #head div div:nth-child(2) p:nth-child(2){
+        font-size: 20px;
+    }
+    #sect1{
+        display: block;
+        margin-top: -25vh;
+        height: 90vh;
+    }
+    #sect1 div:nth-child(1){
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+    #sect1 div:nth-child(2) img{
+        width: 60%;
+        text-align: center;
+        margin-top: -2vh;
+    }
+    #sect2{
+        display: block;
+    }
+    #sect2 div:nth-child(1) img{
+        width: 60%;
+        text-align: center;
+        margin-top: 5vh;
+    }
+    #sect2 div:nth-child(2){
+        width: 60%;
+        margin: auto;
+        margin-top: 10vh;
+        text-align: center;
+    }
+}
+@media(max-width: 800px){
+    #head{
+        height: 115vh;
+    }
+    #head div form{
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #head div form input{
+        margin: auto;
+    }
+    #head div form button{
+        margin: 2vh auto;
+    }
+    #sect1 div:nth-child(1) h1{
+        font-size: 40px;
+    }
+    #sect1 div:nth-child(1) p{
+        font-size: 17px;
+    }
+    #sect2 div:nth-child(2) h1{
+        font-size: 40px;
+    }
+    #sect2 div:nth-child(2) p{
+        font-size: 17px;
+    }
+}
+@media(max-width: 600px){
+    #head div form input{
+        width: 80%;
+    }
 }
